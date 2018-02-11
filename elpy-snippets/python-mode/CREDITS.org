@@ -1,0 +1,4 @@
+Please note - the majority of these snippets were initially created by Jordan
+Schaefer, as a part of Elpy.
+
+https://github.com/jorgenschaefer/elpy
