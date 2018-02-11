@@ -42,7 +42,8 @@
     (mapc (lambda (snippet-dir)
             (when (boundp 'yas-snippet-dirs)
               (add-to-list 'yas-snippet-dirs snippet-dir t))
-            (yas-load-directory snippet-dir))
+            (condition-case nil
+              (yas-load-directory snippet-dir)))
           snippet-dirs)))
 
 ;;;###autoload
@@ -50,3 +51,4 @@
   '(speech-snippets-initialize))
 
 (provide 'speech-snippets)
+;;; speech-snippets.el ends here
